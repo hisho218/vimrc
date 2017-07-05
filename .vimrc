@@ -317,6 +317,8 @@ else
   colorscheme zenburn
 endif
 
+hi Visual term=reverse cterm=reverse guibg=Grey
+
 " For solarized switch between light and dark
 call togglebg#map("<F5>")
 
