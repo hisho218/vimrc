@@ -290,7 +290,13 @@ set t_vb=
 set tm=500
 
 " System clipboard
-set clipboard=unnamed
+set clipboard=unnamedp
+
+" Commands to copy and paste from the clipboard
+nmap <c-v> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+imap <c-v> <Esc>:set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
+nmap <c-c> :.w !pbcopy<CR><CR>
+vmap <c-c> :w !pbcopy<CR><CR>
 
 "split navigations
 nnoremap <C-J> <C-W><C-J>
