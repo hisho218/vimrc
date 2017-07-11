@@ -35,6 +35,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 
 "------------------------------------------------------------
@@ -290,7 +291,7 @@ set t_vb=
 set tm=500
 
 " System clipboard
-set clipboard=unnamedp
+"set clipboard=unnamedp
 
 " Commands to copy and paste from the clipboard
 nmap <c-v> :set paste<CR>:r !pbpaste<CR>:set nopaste<CR>
@@ -413,9 +414,6 @@ let python_highlight_all=1
 " Hide .pyrc files
 let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 
-" Highlight white spaces
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " CSCOPE settings for vim           
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -447,7 +445,7 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 if has("cscope")
 
     """"""""""""" Standard cscope/vim boilerplate
-    set csprg=/usr/bin/cscope
+    set csprg=/usr/local/bin/cscope
     " check cscope for definition of a symbol before checking ctags: set to 1
     " if you want the reverse search order.
     set csto=0
