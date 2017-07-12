@@ -390,12 +390,12 @@ set smartcase                   " ... unless they contain at least one capital l
 """""""""""""""""""""""""""""""
 "PEP8 for python
 au BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
     \ set fileformat=unix
 
 set encoding=utf-8
