@@ -1,1 +1,5 @@
 alias vim="/usr/local/Cellar/vim/8.0.0705/bin/vim"
+alias gs="git status"
+alias gitlog="git log"
+alias gb="git branch"
+alias go="git checkout"

@@ -1,0 +1,10 @@
+[user]
+    email = halshaebi@apple.com
+[color]
+    ui = auto
+[core]
+    editor = /usr/bin/vim
+[log]
+    date = relative
+[format]
+    pretty = format:%C(yellow)%h %Cblue%>(12)%ad %Cgreen%<(7)%aN%Cred%d %Creset%s
