@@ -86,3 +86,8 @@ source $ZSH/oh-my-zsh.sh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/myaliases
+source ~/appleAliases
+GOPATH=$HOME
+export PATH="/Users/halshaebi/miniconda2/bin:$HOME/bin:$PATH"
+
+

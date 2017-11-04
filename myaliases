@@ -1,5 +1,6 @@
-alias vim="/usr/local/Cellar/vim/8.0.0705/bin/vim"
+alias vim="/usr/local/Cellar/vim/8.0.0997/bin/vim"
 alias gs="git status"
 alias gitlog="git log"
 alias gb="git branch"
-alias go="git checkout"
+alias co="git checkout"
+alias pyscope="find . -name '*.py' > cscope.files; cscope -R -b"
